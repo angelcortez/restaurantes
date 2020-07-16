@@ -9,13 +9,137 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+  <!--modal grupo-->
+  <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Crear grupo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre grupo:</label>
+            <input type="text" class="form-control" placeholder="Nombre del grupo">
+          </div>
+          <div class="form-group photoNewGroup">
+            <a href=""><img class="img-fluid imgNewGroup" src="img/camara.ico" alt=""></a>
+          </div>
+          <div class="form-group">
+            <label class="label-priority-newGroup" for="exampleSelect1">Prioridad:</label>
+              <select class="select-priority-new-group" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin modal grupo-->
+  <!-- modal sub grupo-->
+  <div id="exampleModal2" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Crear subgrupo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre subgrupo:</label>
+            <input type="text" class="form-control" placeholder="Nombre del subgrupo">
+          </div>
+          <div class="form-group">
+            <label class="label-priority-newGroup" for="exampleSelect1">Prioridad:</label>
+              <select class="select-priority-new-group" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin modal sub grupo-->
+  <!--modal platillo-->
+  <div id="exampleModal3" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Crear platillo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre platillo:</label>
+            <input type="text" class="form-control" placeholder="Nombre platillo">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Precio:</label>
+            <input type="text" class="form-control" placeholder="Precio">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group photoNewGroup">
+            <a href=""><img class="img-fluid imgNewGroup" src="img/camara.ico" alt=""></a>
+          </div>
+          <div class="custom-control custom-switch switch-modal">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
+          </div>
+          <div class="custom-control custom-switch switch-modal">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
+          </div>
+          <div class="form-group">
+            <label class="label-priority-newGroup" for="exampleSelect1">Prioridad:</label>
+              <select class="select-priority-new-group" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin modal platillo-->
      <div class="main">
         <div class="col-md-12 col-sm-12 sup">
             <div class="backgroundSuperior">
                 <h4 class="color-white text-center margin-top-20">
                   <a href="index.html" class="btnBackPage">
-                    <img src="img/back.png" alt="">
-                  </a>Grupos<a href="" class="btnAddGroupClass">
+                    <img class="img-fluid" src="img/menu-white.png" alt=""/>
+                  </a>Grupos<a id="" data-toggle="modal" data-target="#exampleModal" class="btnAddGroupClass">
                     <img class="img-fluid" src="img/add-white.png" alt="">
                   </a>
                 </h4>
@@ -34,7 +158,7 @@
                             <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
                             <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
                             <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
-                            <a class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
+                            <a data-toggle="modal" data-target="#exampleModal2" class="btnGroupIcons float-left"><img class="img-fluid" src="img/add-white.png" alt=""></a>
                           </div>
                           <div class="divPriority">
                             <label class="label-priority" for="exampleSelect1">Prioridad:</label>
@@ -69,13 +193,13 @@
                               <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
                               <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
                               <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
-                              <a class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
+                              <a data-toggle="modal" data-target="#exampleModal3" class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
                             </div>
                           </div>
                           <!--saucer-->
                           <div class="subgroup-items">
                             <div class="imgmenu">
-                              <a href=""><img class="icon-cam" src="img/camera-white.png"/><img class="img-fluid border-radius-10 img-detail" src="img/helado_2.jpg" alt=""></a>
+                              <a href=""><img class="img-fluid border-radius-10 img-detail" src="img/camara.ico" alt=""></a>
                             </div>
                             <div class="infomenu text-center">
                                 <h6 >Helado</h6>
@@ -115,7 +239,6 @@
                           <div class="subgroup-items">
                             <div class="imgmenu">
                               <a href="">
-                                <img class="icon-cam" src="img/camera-white.png"/>
                                 <img class="img-fluid border-radius-10 img-detail" src="img/helado_2.jpg" alt=""></a>
                             </div>
                             <div class="infomenu text-center">
@@ -210,7 +333,7 @@
                           <!--saucer-->
                           <div class="subgroup-items">
                             <div class="imgmenu">
-                              <a href=""><img class="icon-cam" src="img/camera-white.png"/><img class="img-fluid border-radius-10 img-detail" src="img/helado_4.jpg" alt=""></a>
+                              <a href=""><img class="img-fluid border-radius-10 img-detail" src="img/helado_4.jpg" alt=""></a>
                             </div>
                             <div class="infomenu text-center">
                                 <h6 >Helado</h6>
@@ -250,7 +373,7 @@
                           <div class="subgroup-items">
                             <div class="imgmenu">
                               <a href="">
-                                <img class="icon-cam" src="img/camera-white.png"/>
+                                
                                 <img class="img-fluid border-radius-10 img-detail" src="img/helado_5.jpg" alt=""></a>
                             </div>
                             <div class="infomenu text-center">
@@ -324,8 +447,10 @@
             </div>
         </div>
      </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="js/menuAdmin.js"></script>
 </body>
 </html>

@@ -53,3 +53,15 @@
     margin-left: 10%;
 }
 
+
+select{
+    border-radius: 10px!important;
+}
+
+textarea{
+    border:solid 1px #000!important;
+}
+
+input{
+    border:solid 1px #000!important;
+}
