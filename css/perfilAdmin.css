@@ -1,0 +1,117 @@
+.btnBackPageAds{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10%;
+}
+
+.titlePerfilAds{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.imgBack{
+    width:25px;
+    height: 25px;
+}
+
+.backgroundInferior{
+    background-color: #fff;
+    width: 100%;
+    height: 88%;
+    float: left;
+}
+
+.backgroundSuperior{
+    width: 100%;
+    min-height: 80px;
+    padding: 0px!important;
+    float: left;
+}
+
+.sup{
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    padding: 0px!important;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.input-time{
+    height: 25px!important;
+    width: 65px!important;
+}
+
+.title-day{
+    width: 45%;
+}
+
+.title-service{
+    width: 42%;
+}
+
+.control-time{
+    width: 20%;
+}
+
+.margin-left-10{
+    margin-left: 10px;
+}
+
+.border-black{
+    border: 1px solid #000!important;
+}
+.check-margin{
+    margin-bottom: 5px;
+}
+
+.price{
+    width: 60%;
+    float: right;
+}
+
+.btnGuardarClass{
+    border-radius: 10px;
+    width: 150px;
+    border: solid 1px #000;
+    height: 40px;
+    display: inline-block;
+    padding-top: 5px;
+    color:#000;
+    text-decoration: none;
+}
+
+
+.divGuardar{
+    width:100%;
+    height: 40px;
+}
+
+.imgProfile{
+    margin:20px;
+    padding: 20px;
+}
+
+.download-ico{
+    width: 8%;
+    float: left;
+    margin-top: 40%;
+    margin-left: 2%;
+}
+
+.width-90{
+    width:90%;
+}
+
+.divImgPublicidad{
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}

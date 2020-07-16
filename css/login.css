@@ -1,0 +1,107 @@
+.imgTop{
+    display: block;
+    margin-bottom: 20px;
+}
+.btnClassLogin{
+    width: 100%;
+    background-color: #000!important;
+    color: #FFF!important;
+}
+
+.btnClassFb{
+    width: 100%;
+    background-color: #462CE2!important;
+    color: #FFF!important;
+}
+
+.btnClassGmail{
+    width: 100%;
+    background-color: #E22C2C!important;
+    color: #FFF!important;
+}
+
+.lineLeft{
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    background-color: #000;
+}
+
+.lineRight{
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+    background-color: #000;
+}
+
+.spanLetterO{
+    display: block;
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+.container-remember-recover{
+    display: block;
+    width: 100%;
+    float:left;
+}
+
+.remember{
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.recover{
+    width: 50%;
+    float: right;
+    display: block;
+    text-align: center;
+}
+
+
+
+.imgIconLogin{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.img-fluid {
+    min-width: 100%!important;
+}
+
+.lblWelcome{
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+.fondoLoginSuperior{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/helado.jpg');
+    min-height: 250px;
+    background-size: cover;
+}
+
+.btnRegistrate{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+input[type=text], button{
+    height: 45px!important;
+}
+

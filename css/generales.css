@@ -1,0 +1,55 @@
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.form-check-input {
+    position: relative!important; 
+    margin-top: 0px!important; 
+    margin-left: 0px!important; 
+}
+
+.color-white{
+    color:white;
+}
+
+.border-radius-10{
+    border-radius: 10px!important;
+}
+
+
+.backgroundSuperior{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.width-100{
+    width: 100%;
+}
+
+.publicidadInferior{
+    position: absolute;
+    bottom: 0px;
+    margin: 0!important;
+    z-index: 1;
+}
+
+.btnBackPage{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10%;
+}
+
+.margin-zero{
+    margin: 0!important;
+}
+
+.margin-left-10{
+    margin-left: 10%;
+}
+

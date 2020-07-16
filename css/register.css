@@ -1,0 +1,35 @@
+.check-container{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 30%;
+}
+
+.btnClassRegister{
+    width: 100%;
+    background-color: #000!important;
+    color: #FFF!important;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.54)!important;
+}
+
+.colorInput{
+    border: 1px solid #DADADA!important;
+    background-color: transparent!important;
+    color: #C4C4C4!important;
+}
+
+::placeholder{
+    color: #C4C4C4!important;
+}
+
+.titleRegister{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+input[type=text], button{
+    height: 45px!important;
+}
