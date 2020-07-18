@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/menuSubGroupCustomer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menuDesplegable.css">
+</head>
+<body>
+     <div class="main">
+        <div class="col-md-12 col-sm-12 sup">
+            <div class="backgroundSuperior optionsDivSuperior">
+                <h4 class="color-white text-center margin-top-5">
+                    <a href="index.html" class="btnBackPage"><img class="img-fluid" src="img/back.png" alt=""></a>
+                    Menu
+                </h4>
+            </div>
+            <div class="backgroundInferior">
+                <div id="accordion">
+                  <!--groups-->
+                  <div class="card">
+                    <div class="card-header titleGroupBackGround border-radius-10" id="headingOne">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link widthAll">
+                          <h3 class="titleGroup color-white"> Tacos</h3>
+                          <img data-target="#collapseOne"  data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" class="img-fluid arrow-down float-right" src="img/arrow_white_down.png" alt="">
+                        </div>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="subGroup">
+                          <div class="subgroup-title">
+                            <div class="imgItem">
+                                <img class="img-fluid border-radius-10" src="img/helado_7.jpg" alt="">
+                            </div>
+                            <div class="dataItem">
+                                <p class="pDataItem">Taco Marlín</p>
+                                <p class="pDataItem">Con aguacate</p>
+                                <p class="pDataItemPrice float-left">$34</p>
+                                <div class="iconCestaBlack float-left text-right">
+                                    <a href=""><img src="img/iconCesta-black.png" alt=""></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="subGroup">
+                            <div class="subgroup-title">
+                              <div class="imgItem">
+                                  <img class="img-fluid border-radius-10" src="img/helado_7.jpg" alt="">
+                              </div>
+                              <div class="dataItem">
+                                  <p class="pDataItem">Taco Marlín</p>
+                                  <p class="pDataItem">Con aguacate</p>
+                                  <p class="pDataItemPrice float-left">$34</p>
+                                  <div class="iconCestaBlack float-left text-right">
+                                      <a href=""><img src="img/iconCesta-black.png" alt=""></a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="divIconCesta text-center">
+                        <img src="img/cesta-icon.png" alt="">
+                        <label class="lblCestaCount" for="">1</label>
+                    </div>
+                  </div>
+                  <!--end group-->
+                </div>
+            </div>
+        </div>
+     </div>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="js/menuAdmin.js"></script>
+     <script src="js/menuDesplegable.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.logoBtn{
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo, .divBtnLogOut{
+    width: 50%;
+    float: left;
+    min-height: 100px;
+}
+
+.titleUserName{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #2EBFC6;
+    color: white;
+    padding: 10px;
+}
+
+.sup{
+    padding:0px!important;
+}
+
+.btnLogOut{
+    border: solid 1px #2EBFC6;
+    border-radius: 25px;
+    padding: 7px 0px 7px 0px;
+    position: relative;
+    display: inline-block;
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+    background-color: #2EBFC6;
+    color: white;
+}
+
+.containerBtnTypeOrder{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.divSave{
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.divEdit{
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.containerTypeService{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    text-align: CENTER;
+}
+
+.saveIcon{
+    width: 25px;
+}
+
+.editIcon{
+    width: 25px;
+}
+
+.btnTypeService{
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 1px #2EBFC6;
+    display: inline-block;
+}
+
+.titleTypeService{
+    color:rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

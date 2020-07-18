@@ -7,15 +7,43 @@
     <link rel="stylesheet" href="css/generales.css">
     <link rel="stylesheet" href="css/menuAdmin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menuDesplegable.css">
 </head>
 <body>
+  <!-- WRAPPER -->
+  <nav class="nav">
+    <img class="iconMenu" src="img/menu-white.png" alt="">
+    <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <title>menu</title>
+      <path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+    </svg> -->
+  </nav>
+  <section class="nav-wrapper">
+    <div class="informacionUsuarioMenuLateral">
+      <img class="iconUserMenuLateral" src="img/logo-1.png" alt="">
+      <h5 class="fontWhite margin-top-10">Bienvenido</h5>
+      <h5 class="fontWhite margin-top-10">Ángel Efrén Cortéz Olalde</h5>
+    </div>
+    <div class="side-nav">
+      
+      <a href="#" class="sideLink">
+        <img class="iconMenuLateral" src="img/save.ico" alt="">
+        <h5 class="textMenuLateralOption">Inicio</h5>
+      </a>
+      <a href="menuAdmin.html" class="sideLink">
+        <img class="iconMenuLateral" src="img/save.ico" alt="">
+        <h5 class="textMenuLateralOption">Menu</h5>
+      </a>
+      <img class="close" src="img/closeIcon-white.png" alt="">
+    </div>
+  </section>
   <!--modal grupo-->
   <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Crear grupo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closebtnModal" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -52,7 +80,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Crear subgrupo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closebtnModal" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -86,7 +114,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Crear platillo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closebtnModal" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -136,10 +164,9 @@
      <div class="main">
         <div class="col-md-12 col-sm-12 sup">
             <div class="backgroundSuperior">
-                <h4 class="color-white text-center margin-top-20">
-                  <a href="index.html" class="btnBackPage">
-                    <img class="img-fluid" src="img/menu-white.png" alt=""/>
-                  </a>Grupos<a id="" data-toggle="modal" data-target="#exampleModal" class="btnAddGroupClass">
+                <h4 class="color-white text-center margin-top-5">
+                
+                  Grupos<a id="" data-toggle="modal" data-target="#exampleModal" class="btnAddGroupClass">
                     <img class="img-fluid" src="img/add-white.png" alt="">
                   </a>
                 </h4>
@@ -153,7 +180,7 @@
                         <div class="btn btn-link">
                           <img class="img-fluid img-group" src="img/helado_1.jpg" alt="">
                           <h6 class="titleGroup color-white"> Especialidades</h6>
-                          <img data-target="#collapseOne"  data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne" class="img-fluid arrow-down" src="img/arrow_white_down.png" alt="">
+                          <img data-target="#collapseOne"  data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" class="img-fluid arrow-down" src="img/arrow_white_down.png" alt="">
                           <div class="btnGroup">
                             <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
                             <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
@@ -174,11 +201,12 @@
                       </h5>
                     </div>
                 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
                         <div class="subGroup">
                           <div class="subgroup-title">
                             <h6 class="titleSubGroup color-white"> Productos refrigerados</h6>
+                            <img data-target="#collapseSubOne"  data-toggle="collapse" aria-expanded="false" aria-controls="collapseSubOne" class="img-fluid arrow-down" src="img/arrow_white_down.png" alt="">
                             <div class="divSubGroupPriority">
                               <label class="label-subGroup-priority" for="exampleSelect1">Prioridad:</label>
                               <select class="select-priority" id="exampleSelect1">
@@ -196,253 +224,94 @@
                               <a data-toggle="modal" data-target="#exampleModal3" class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
                             </div>
                           </div>
-                          <!--saucer-->
-                          <div class="subgroup-items">
-                            <div class="imgmenu">
-                              <a href=""><img class="img-fluid border-radius-10 img-detail" src="img/camara.ico" alt=""></a>
-                            </div>
-                            <div class="infomenu text-center">
-                                <h6 >Helado</h6>
-                                <div class="btnSaucer">
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
-                                </div>
-                                <div class="typeService">
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
+                          <div class="subGroupCollapse collapse" id="collapseSubOne" aria-labelledby="headingSubOne" data-parent="#collapseOne">
+                            <!--saucer-->
+                            <div class="subgroup-items">
+                              <div class="imgmenu">
+                                <a href=""><img class="img-fluid border-radius-10 img-detail" src="img/camara.ico" alt=""></a>
+                              </div>
+                              <div class="infomenu text-center">
+                                  <h6 >Helado</h6>
+                                  <div class="btnSaucer">
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
                                   </div>
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
+                                  <div class="typeService">
+                                    <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                      <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                      <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
+                                    </div>
                                   </div>
-                                </div>
-                                <div class="divPriority-saucer">
-                                  <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
-                                  <select class="select-priority" id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                                </div>
+                                  <div class="divPriority-saucer">
+                                    <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
+                                    <select class="select-priority" id="exampleSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <label class="label-saucer-priority text-dark margin-top-5" for="exampleSelect1">Precio:</label><input class="inputPrice" type="text">
+                              </div>
+                              <div class="form-group divContainerDescription">
+                                <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
+                                <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
                             </div>
-                            <div class="form-group divContainerDescription">
-                              <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
-                              <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <!--end saucer-->
+                            <!--saucer-->
+                            <div class="subgroup-items">
+                              <div class="imgmenu">
+                                <a href="">
+                                  <img class="img-fluid border-radius-10 img-detail" src="img/helado_2.jpg" alt=""></a>
+                              </div>
+                              <div class="infomenu text-center">
+                                  <h6 >Paleta de hielo</h6>
+                                  <div class="btnSaucer">
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
+                                    <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
+                                  </div>
+                                  <div class="typeService">
+                                    <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                      <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                      <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
+                                    </div>
+                                  </div>
+                                  <div class="divPriority-saucer">
+                                    <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
+                                    <select class="select-priority" id="exampleSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <label class="label-saucer-priority text-dark margin-top-5" for="exampleSelect1">Precio:</label><input class="inputPrice" type="text">
+                              </div>
+                              <div class="form-group divContainerDescription">
+                                <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
+                                <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
                             </div>
+                            <!--end saucer-->
                           </div>
-                          <!--end saucer-->
-                          <!--saucer-->
-                          <div class="subgroup-items">
-                            <div class="imgmenu">
-                              <a href="">
-                                <img class="img-fluid border-radius-10 img-detail" src="img/helado_2.jpg" alt=""></a>
-                            </div>
-                            <div class="infomenu text-center">
-                                <h6 >Paleta de hielo</h6>
-                                <div class="btnSaucer">
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
-                                </div>
-                                <div class="typeService">
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
-                                  </div>
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
-                                  </div>
-                                </div>
-                                <div class="divPriority-saucer">
-                                  <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
-                                  <select class="select-priority" id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                                </div>
-                            </div>
-                            <div class="form-group divContainerDescription">
-                              <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
-                              <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                          </div>
-                          <!--end saucer-->
                         </div>
                       </div>
                     </div>
                   </div>
                   <!--end group-->
-                  <!--groups-->
-                  <div class="card">
-                    <div class="card-header backgroundSuperior border-radius-10" id="headingTwo">
-                      <h5 class="mb-0">
-                        <div class="btn btn-link collapsed">
-                          <img class="img-fluid img-group" src="img/helado_3.jpg" alt="">
-                          <h6 class="titleGroup color-white"> Helados</h6>
-                          <img data-target="#collapseTwo"  data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo" class="img-fluid arrow-down" src="img/arrow_white_down.png" alt="">
-                          <div class="btnGroup">
-                            <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
-                            <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
-                            <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
-                            <a class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
-                          </div>
-                          <div class="divPriority">
-                            <label class="label-priority" for="exampleSelect1">Prioridad:</label>
-                            <select class="select-priority" id="exampleSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                        </div>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        <div class="subGroup">
-                          <div class="subgroup-title">
-                            <h6 class="titleSubGroup color-white"> Productos refrigerados</h6>
-                            <div class="divSubGroupPriority">
-                              <label class="label-subGroup-priority" for="exampleSelect1">Prioridad:</label>
-                              <select class="select-priority" id="exampleSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
-                            <div class="btnSubGroup float-right">
-                              <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
-                              <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
-                              <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
-                              <a class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
-                            </div>
-                          </div>
-                          <!--saucer-->
-                          <div class="subgroup-items">
-                            <div class="imgmenu">
-                              <a href=""><img class="img-fluid border-radius-10 img-detail" src="img/helado_4.jpg" alt=""></a>
-                            </div>
-                            <div class="infomenu text-center">
-                                <h6 >Helado</h6>
-                                <div class="btnSaucer">
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
-                                </div>
-                                <div class="typeService">
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
-                                  </div>
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
-                                  </div>
-                                </div>
-                                <div class="divPriority-saucer">
-                                  <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
-                                  <select class="select-priority" id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                                </div>
-                            </div>
-                            <div class="form-group divContainerDescription">
-                              <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
-                              <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                          </div>
-                          <!--end saucer-->
-                          <!--saucer-->
-                          <div class="subgroup-items">
-                            <div class="imgmenu">
-                              <a href="">
-                                
-                                <img class="img-fluid border-radius-10 img-detail" src="img/helado_5.jpg" alt=""></a>
-                            </div>
-                            <div class="infomenu text-center">
-                                <h6 >Aguas frescas</h6>
-                                <div class="btnSaucer">
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/save.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/edit.ico" alt=""></a>
-                                  <a class="btnSaucerGroupIcons float-left" href=""><img class="img-fluid img-btn-saucer" src="img/delete.png" alt=""></a>
-                                </div>
-                                <div class="typeService">
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Menú para llevar</label>
-                                  </div>
-                                  <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2">Menú a la mesa</label>
-                                  </div>
-                                </div>
-                                <div class="divPriority-saucer">
-                                  <label class="label-saucer-priority text-dark" for="exampleSelect1">Prioridad:</label>
-                                  <select class="select-priority" id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                                </div>
-                            </div>
-                            <div class="form-group divContainerDescription">
-                              <label class="margin-zero" for="exampleFormControlTextarea1">Descripción:</label>
-                              <textarea class="form-control txtAreaDesc" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                          </div>
-                          <!--end saucer-->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--end group-->
-                  <!-- <div class="card">
-                    <div class="card-header backgroundSuperior" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Collapsible Group Item #2
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header backgroundSuperior" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Collapsible Group Item #3
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
             </div>
         </div>
@@ -452,5 +321,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
      <script src="js/menuAdmin.js"></script>
+     <script src="js/menuDesplegable.js"></script>
 </body>
 </html>

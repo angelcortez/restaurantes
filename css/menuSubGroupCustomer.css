@@ -1,0 +1,205 @@
+.btnAddGroupClass{        
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 5%;
+}
+
+.imgBack{
+    width:25px;
+    height: 25px;
+}
+
+.backgroundInferior{
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+    float: left;
+}
+
+.backgroundSuperior{
+    width: 100%;
+    min-height: 50px;
+    padding: 0px!important;
+    float: left;
+    background: rgba(0, 0, 0, 0.5)!important;
+}
+
+.sup{
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    padding: 0px!important;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.input-time{
+    height: 25px!important;
+    width: 65px!important;
+}
+
+
+.border-black{
+    border: 1px solid #000!important;
+}
+.check-margin{
+    margin-bottom: 5px;
+}
+
+#accordion{
+    margin-bottom: 10px!important;
+}
+
+.img-group{
+    float: left;
+    width: 35%;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.titleGroup {
+    float: left;
+    width: 90%;
+    text-align: center;
+    padding-top: 5px;
+    text-align: left;
+}
+
+
+.titleSubGroup{
+    float: left;
+    width: 90%;
+    text-align: center;
+}
+
+.card-header {
+    padding: 0px!important;
+}
+.btnGroup{
+    width: 60%;
+    float: left;
+}
+
+.btnSubGroup{
+    width: 50%;
+    float: right;
+}
+
+.arrow-down{
+    width: 25px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.subGroup{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+}
+
+.card-body{
+    padding: 0px!important;
+}
+.card {
+    border: none!important;
+}
+
+.imgItem{
+    width: 45%;
+    float: left;
+    border-radius: 10px;
+    padding: 5px;  
+}
+
+
+
+.subgroup-items{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.subgroup-title {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    float: left;
+    border: solid 1px gray;
+}
+
+
+.subGroupCollapse{
+    height: auto;
+    float: left;    
+    display: block;
+}
+
+
+.btnBackPage {
+    display: block;    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 5%;
+}
+
+.optionsDivSuperior {
+    min-height: 110px;
+    padding-top: 10%!important;
+    background-image: url('../img/helado_4.jpg')!important;
+    background-size: cover!important;
+}
+
+.titleGroupBackGround {
+    width: 100%;
+    padding: 0px!important;
+    float: left;
+    background-color: #2EBFC6!important;
+}
+
+.dataItem{
+    width: 55%;
+    float: left;
+}
+
+.pDataItem{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.pDataItemPrice{
+    margin-bottom: 5px;
+    font-size: 15px;
+    width: 50%;
+}
+
+.iconCestaBlack{
+    width: 50%;
+    padding-right: 5px;
+}
+
+.divIconCesta{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.lblCestaCount{
+    border-radius: 50px;
+    background-color: #000;
+    color: #FFF;
+    width: 18px;
+    position: absolute;
+    margin-top: -15px;
+    height: 18px;
+    font-size: 12px;
+    padding: 0px!important;
+}

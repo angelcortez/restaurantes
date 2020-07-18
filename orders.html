@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/orders.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+     <div class="main">
+        <div class="col-md-12 col-sm-12 sup">
+            <div class="backgroundSuperior">
+                <h4 class="color-white text-center margin-top-20">
+                  <a href="index.html" class="btnBackPage">
+                    <img class="img-fluid" src="img/menu-white.png" alt=""/>
+                  </a>Ordenes<a id="" data-toggle="modal" data-target="#exampleModal" class="btnAddGroupClass">
+                    <img class="img-fluid" src="img/add-white.png" alt="">
+                  </a>
+                </h4>
+            </div>
+            <div class="backgroundInferior">
+                <div class="notifications">
+                  <div class="form-check all">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Todos
+                    </label>
+                  </div>
+                  <div class="form-check seen">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Vistos
+                    </label>
+                  </div>
+                  <div class="form-check pending">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Pendientes
+                    </label>
+                    <label for="" class="label-pendings">10</label>
+                  </div>
+                  <div class="search">
+                    <input type="text" class="inputSearch" placeholder="Búsqueda.." name="search2">
+                    <button class="btnSearch" type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                  
+                </div>
+                <div id="accordion" class="float-left">
+                  <!--groups-->
+                  <div class="card">
+                    <div class="card-header containerCollapse border-radius-10" id="headingOne">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link">
+                          <!-- <img class="img-fluid img-group" src="img/helado_1.jpg" alt=""> -->
+                          <h6 class="titleGroup"> A domicilio</h6>
+                          <img data-target="#collapseOne"  data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne" class="img-fluid arrow-down" src="img/arrow_black.png" alt="">
+                          <p class="pElementsOrder"><b>Número de orden:</b> 1234</p> 
+                          <p class="pElementsOrder"><b>Hora de solicitud:</b> 20:30</p>
+                          <p class="pElementsOrder"><b>Descripción:</b> 2 hamburguesas con una orden de papas y un refresco de 2 litros</p>
+                          <!-- <div class="btnGroup">
+                            <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
+                            <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
+                            <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
+                            <a data-toggle="modal" data-target="#exampleModal2" class="btnGroupIcons float-left"><img class="img-fluid" src="img/add-white.png" alt=""></a>
+                          </div> -->
+                         <!--  <div class="divPriority">
+                            <label class="label-priority" for="exampleSelect1">Prioridad:</label>
+                            <select class="select-priority" id="exampleSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div> -->
+                        </div>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="subGroup"></div>
+                          <!-- <div class="subgroup-title"> -->
+                            <p class="pElementsOrder"><b>Instrucciones especiales:</b> una de las hamburguesas sin cebolla, y la otra con doble rebanada de jamón</p>
+                            <p class="pElementsOrder"><b>Tipo de pago:</b> Efectivo, se requiere un cambio de un billete de 500 pesos</p>
+                            <p class="pElementsOrder"><b>Télefono del cliente:</b> 000-0000-0000</p>
+                            <p class="pElementsOrder"><b>Nombre del cliente:</b> Ángel Efrén Cortéz Olalde</p>
+                            <p class="pElementsOrder"><b>Entrega en:</b>Dirección del cliente / Mesa B/ Dirección de sucursal</p>
+                            <p class="lblEstatus float-left"><b>Estatus:</b> 
+                            <div class="form-group float-left selectStatus">
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Confirmado</option>
+                                <option>Pendiente</option>
+                              </select>
+                            </div></p>
+                            <p class="pElementsOrder"><b>Tiempo de preparación:</b> <input class="control-time" type="time" id="appt" name="appt" min="09:00" max="18:00" required></p>
+                            <a class="btn-orders" href="">Confirmar</a>
+                            <a class="btn-orders" href="">Editar</a>
+                            <a class="btn-orders" href="">Cancelar</a>
+                            <a class="btn-orders" href="">Re-imprimir</a>
+                            <!-- <h6 class="titleSubGroup color-white"> Productos refrigerados</h6>
+                            <div class="divSubGroupPriority">
+                              <label class="label-subGroup-priority" for="exampleSelect1">Prioridad:</label>
+                              <select class="select-priority" id="exampleSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div> -->
+                            <!-- <div class="btnSubGroup float-right">
+                              <a class="btnGroupIcons float-left margin-left-10" href=""><img class="img-fluid" src="img/save-white.png" alt=""></a>
+                              <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/edit-white.png" alt=""></a>
+                              <a class="btnGroupIcons float-left" href=""><img class="img-fluid" src="img/delete.png" alt=""></a>
+                              <a data-toggle="modal" data-target="#exampleModal3" class="btnGroupIcons float-left"href=""><img class="img-fluid" src="img/add-white.png" alt=""></a>
+                            </div> -->
+                          <!-- </div> -->
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                  <!--end group-->
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="https://use.fontawesome.com/1a7d4280c9.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="js/menuAdmin.js"></script>
+</body>
+</html>
