@@ -91,3 +91,42 @@ input{
 .widthAll{
     width: 100%;
 }
+
+.font-15{
+    font-size: 15px!important;
+}
+
+.iconCestaBlack{
+    width: 50%;
+    padding-right: 5px;
+}
+
+.divIconCesta{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.lblCestaCount{
+    border-radius: 50px;
+    background-color: #000;
+    color: #FFF;
+    width: 18px;
+    position: absolute;
+    margin-top: -15px;
+    height: 18px;
+    font-size: 12px;
+    padding: 0px!important;
+}
+
+.width50{
+    width: 50%;
+}
+
+.maxHeightImg{
+    max-height: 150px;
+}
+
+.padding-20{
+    padding: 20px;
+}

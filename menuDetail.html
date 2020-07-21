@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/menuDetail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menuDesplegable.css">
+</head>
+<body>
+     <div class="main">
+        <div class="col-md-12 col-sm-12 sup">
+            <div class="backgroundSuperior optionsDivSuperior">
+                <h4 class="color-white text-center margin-top-5">
+                    <a href="index.html" class="btnBackPage"><img class="img-fluid" src="img/back.png" alt=""></a>
+                    Detalle del producto
+                </h4>
+            </div>
+            <div class="backgroundInferior">
+              <h5 class="text-center margin-top-20 margin-bottom-20">Tacos de camarón</h5>
+              <div class="containerImgDetail">
+                  <img class="imgSaucer" src="img/tacos_camaron.jpg" alt="">
+                  <p class="margin-top-10 font-15">Con arroz, papas, ensalada</p>
+              </div>
+              <h5 class="text-center margin-top-20 titleInstructions">Instrucciones especiales</h5>
+              <div class="form-group padding-20">
+                <label for="exampleFormControlTextarea1" class="font-15">Agregar notas</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="counter text-center margin-bottom-20">
+                  <a class="btnMinus" href="">-</a>
+                  <span class="countItems">1</span>
+                  <a class="btnMinus" href="">+</a>
+              </div>
+              <div class="btnAdd text-center">
+                <a class="btnAgregar" href="">Agregar</a>
+              </div>
+              <div class="divIconCesta text-center">
+                <img src="img/cesta-icon.png" alt="">
+                <label class="lblCestaCount" for="">1</label>
+            </div>
+            </div>
+        </div>
+     </div>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="js/menuAdmin.js"></script>
+     <script src="js/menuDesplegable.js"></script>
+</body>
+</html>

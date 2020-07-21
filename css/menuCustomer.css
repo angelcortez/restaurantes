@@ -117,12 +117,15 @@ div.search::after {
 
 .imgOptionMenu{
     border-radius: 20px;
+    height: 138px!important;
 }
 
 .contenedor{
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 140px;
+    width: 90%;
 }
  
 .texto-encima{
